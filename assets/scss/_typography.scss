@@ -1,0 +1,161 @@
+/* -------------------------------------------------------------------------- */
+/*  TYPOGRAPHY                                                                */
+/* -------------------------------------------------------------------------- */
+
+
+::marker {
+  color: $latte;
+}
+
+ul {
+    margin: 15px 0 15px 45px;
+    line-height: 1.75;
+}
+a {
+  color: $link-color;
+  text-decoration: none;
+  font-weight: $semi-bold;
+  &:hover {
+    color: $link-hover;
+    text-decoration: underline;
+  }
+}
+
+.light {
+  font-weight: $light !important;
+  font-style: unset !important;
+}
+.regular {
+  font-weight: $regular !important;
+  font-style: unset !important;
+}
+.medium {
+  font-weight: $medium !important;
+  font-style: unset !important;
+}
+.semi-bold {
+  font-weight: $semi-bold !important;
+  font-style: unset !important;
+}
+.bold, strong {
+  font-weight: $bold !important;
+  font-style: unset !important;
+}
+
+.title { //H1
+  @include font-size(6);
+  line-height: 1.1;
+  font-weight: $medium;
+  font-family: $heading-text;
+  color: $heading-color;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  @media (max-width: $mobile) {
+    @include font-size(4);
+  }
+}
+.section-title { //H2
+  @include font-size(5);
+  line-height: 1.1;
+  font-weight: $medium;
+  font-family: $heading-text;
+  color: $heading-color;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  @media (max-width: $mobile) {
+    @include font-size(3.4);
+  }
+}
+.card-title { //H3
+  @include font-size(2.6);
+  line-height: 1.1;
+  font-weight: $medium;
+  color: $body-color;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  @media (max-width: $mobile) {
+    @include font-size(2.4);
+  }
+}
+.eyebrow { //H4
+  @include font-size(1.8);
+  line-height: 1.5;
+  font-weight: $semi-bold;
+  font-family: $body-text;
+  color: $eyebrow-color;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  @media (max-width: $mobile) {
+    @include font-size(1.6);
+  }
+}
+.emphasis { //P2
+  @include font-size(2.6);
+  font-weight: $semi-bold;
+  font-family: $body-text;
+  color: $body-color;
+  @media (max-width: $mobile) {
+    @include font-size(2.2);
+  }
+}
+small {
+  @include font-size(1.6);
+  font-family: $body-text;
+  font-weight: $regular;
+  color: $body-color;
+}
+
+.tag {
+  @include font-size(1.4);
+  font-weight: $semi-bold;
+  font-family: $body-text;
+  color: $caramel;
+}
+.disclaimer {
+  @include font-size(1.2);
+  font-weight: 400;
+  line-height: 16px;
+  font-style: italic;
+  color: $disclaimer;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.strike {
+  text-decoration-line: line-through;
+  text-decoration-thickness: 1px;
+}
+.center {
+  text-align: center;
+}
+.center-block {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+p {
+  line-height: 1.5;
+}
+p + p {
+  margin-top: 20px;
+}
+p + .subtitle {
+  margin-top: -15px;
+}
+p + .button {
+  margin-top: 30px;
+}
+p + .caption {
+  margin-top: 20px;
+  display: block;
+}
+p span {
+  @media (max-width: $lg-tablet) {
+    display: block;
+    margin-top: 20px;
+  }
+}

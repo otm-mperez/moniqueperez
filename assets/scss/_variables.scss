@@ -1,0 +1,102 @@
+// -------------------------------------------------------------------------- //
+//  VARIABLES                                                                 //
+// -------------------------------------------------------------------------- //
+
+// Brand Colors
+// ------------------------------------------------------ /
+
+$black:           #222222;
+$charcoal:        #424242;
+$gray-light:      #CCCCCC;
+$gray-medium:     #767676;
+$white:           #FFFFFF;
+$white-off:       #F6F4F1;
+
+$blueberry:       #2E3D54;
+$smoothie:        #DAE1E6;
+$cafe:            #54514A;
+$mocha:           #87725A;
+$caramel:         #9F8552;
+$capuccino:       #A39175;
+$latte:           #C8BBAB;
+$cream:           #F1ECE5;
+$milk:            $white-off;
+
+
+// Social
+// ------------------------------------------------------ /
+$facebook-color:  #4267B2;
+$twitter-color:   #1DA1F2;
+$youtube-color:   #FF0000;
+$instagram-color: #405DE6;
+$pinterest-color: #BD081C;
+$linkedin-color:  #2867B2;
+
+
+// Components
+// ------------------------------------------------------ /
+$bg-light:         $white-off;
+$disclaimer:       $gray-medium;
+
+$top-nav-height:   30px;
+$site-nav-height:  70px;
+$header-height:    100px;
+$prefooter-height: 100px;
+$footer-height:    250px; // 150px base footer + prefooter
+
+$link-color:       $cafe;
+$link-hover:       $blueberry;
+
+$button-color:     $caramel;
+$button-hover:     darken($button-color,5%);
+$button-disabled:  lighten($button-color,5%);
+
+
+// Fonts
+// ------------------------------------------------------ /
+$eyebrow-color:   $caramel;
+$heading-color:   $blueberry;
+$body-color:      $cafe;
+
+$heading-text:    'Palanquin', sans-serif;
+$body-text:       'Mona Sans', sans-serif;
+
+$extra-light:     200;
+$light:           300;
+$regular:         400;
+$medium:          500;
+$semi-bold:       600;
+$bold:            700;
+
+
+// Breakpoints
+// ------------------------------------------------------ /
+$lg-desktop:      1400px;
+$desktop:         1140px;
+$lg-tablet:       960px;
+$tablet:          800px;
+$mobile:          560px;
+$sm-mobile:       400px;
+
+
+// Contained Width
+// ------------------------------------------------------ /
+$max-width:      1400px;
+$narrow-width:   1000px;
+
+
+// Grid
+// ------------------------------------------------------ /
+$col1:        5.835%;
+$col2:        14.39%;
+$col3:        22.95%;
+$col4:        31.51%;
+$col5:        40.07%;
+$col6:        48.63%;
+$col7:        57.19%;
+$col8:        65.75%;
+$col9:        74.31%;
+$col10:       82.87%;
+$col11:       91.43%;
+$col12:       100%;
+$col-margin:  2.725%;

@@ -1,0 +1,359 @@
+/* -------------------------------------------------------------------------- */
+/*  SCAFFOLDING                                                               */
+/* -------------------------------------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  // Make all fonts antialiased
+  // text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  @include font-size(2);
+  font-weight: $regular;
+  font-family: $body-text;
+  color: $body-color;
+  line-height: 1.25;
+  letter-spacing: 2px;
+  overflow-x: hidden;
+  margin: 0;
+  scroll-behavior: smooth;
+
+  @media screen and (max-width: $mobile) {
+    @include font-size(1.6);
+  }
+}
+main {
+  @include clearfix;
+  margin: 0 auto;
+  background: $white;
+  position: relative;
+  // enables sticky to work
+  // margin-top: $header-height;
+  // display: flex;
+  // flex-direction: row;
+  // flex-wrap: wrap;
+
+  @media screen and (max-width: $tablet) {
+    flex-direction: row-reverse;
+  }
+
+  &.has-sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+  }
+
+  img {
+    max-width: 100% !important;
+    height: auto;
+  }
+}
+table {
+  width: auto;
+  margin: 40px auto 0;
+  text-align: center;
+
+  @media (max-width: $tablet) {
+    overflow-x: scroll;
+  }
+}
+thead {
+  background: $latte;
+}
+td, th {
+  padding: 10px;
+  min-width: 140px;
+}
+.has-sidebar {
+  article {
+    width: 59.5%;
+    // height: 200vh;
+    // min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 6%;
+
+    @media screen and (max-width: $tablet) {
+      margin-top: 50px;
+      width: 100%;
+      padding: 0;
+    }
+  }
+  aside {
+    width: 40%;
+    height: 90vh;
+    min-height: 200px;
+    overflow: auto;
+    position: -webkit-sticky;
+    position: sticky;
+    // top: calc(115px + 1.5%); //header height + padding
+    top: 20px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+
+    @media screen and (max-width: $tablet) {
+      width: 100%;
+      position: static;
+    }
+
+    section + section {
+      margin-top: 3em;
+    }
+  }
+}
+hr {
+  margin: -5px 0 25px;
+}
+
+.content-wrap, .container {
+  position: relative;
+  max-width: $desktop;
+  margin: 0 auto;
+
+  @media screen and (max-width: $desktop) {
+    margin: 0 15px;
+  }
+}
+
+section {
+  padding: 100px 0;
+  position: relative;
+
+  &.padded {
+    padding: 150px 0;
+  }
+  &.light-blue {
+    background: $smoothie;
+  }
+  &.dark-blue {
+    background: $blueberry;
+    .title,
+    .section-title,
+    p {
+      color: $white;
+    }
+  }
+  &.cream {
+    background: $cream;
+  }
+  &.latte {
+    background: $latte;
+    p {
+      color: $cafe;
+    }
+    .eyebrow {
+      color: $blueberry;
+    }
+  }
+  &.grain {
+    background-image: url('./assets/img/bg-grain.jpg');
+    background-size: cover;
+  }
+  &.texture {
+    background-image: url('./assets/img/bg-texture.png');
+    background-size: cover;
+  }
+  // &.mountains {
+  //   background-image: url('./assets/img/pic-quote.jpg');
+  //   background-size: cover;
+  //
+  //   p, .caption {
+  //     color: $milk !important;
+  //   }
+  // }
+}
+
+div {
+  &.max {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  &.network {
+    &:before {
+      content: url('./assets/img/bg-networka.png');
+      position: absolute;
+      bottom: 140px;
+      left: 0;
+      opacity: 1;
+      @media (max-width: $lg-tablet) {
+        opacity: 0.4;
+      }
+    }
+    &:after {
+      content: url('./assets/img/bg-networkb.png');
+      position: absolute;
+      top: -160px;
+      right: 0;
+      opacity: 1;
+      @media (max-width: $lg-tablet) {
+        opacity: 0.4;
+      }
+    }
+  }
+}
+
+.content {
+  width: 100%; /* full-width by default */
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  opacity: 0;
+  transition: all 1.5s;
+  transform: translateY(50px);
+
+  &.center {
+    text-align: center;
+  }
+  &.left {
+    text-align: left;
+  }
+  &.full {
+    max-width: $narrow-width;
+  }
+  &.split {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .col {
+      width: 50%;
+
+      &:first-child {
+        padding-right: 3em;
+      }
+    }
+
+    @media (max-width: $lg-tablet) {
+      flex-wrap: wrap;
+      .col {
+        width: 100%;
+        text-align: center;
+
+        &:first-child {
+          padding-right: 0;
+          padding-bottom: 3em;
+        }
+      }
+    }
+  }
+  &.inverse {
+    flex-direction: row-reverse;
+
+    .col:first-child {
+      padding-left: 3em;
+    }
+
+    @media (max-width: $lg-tablet) {
+      .col:first-child {
+        padding-left: 0;
+        padding-bottom: 3em;
+      }
+    }
+  }
+
+  @media (max-width: $lg-tablet) {
+    width: 90%;
+  }
+
+  &.contained {
+    max-width: 800px;
+  }
+}
+
+.card-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 40px;
+}
+.card {
+  width: 31.5%;
+  // min-height: 425px;
+  padding: 50px 40px;
+  // background: #F8F6EF;
+  background: $milk;
+  border: 1px solid $caramel;
+  border-radius: 2px;
+  text-align: left;
+  margin-top: 30px;
+
+  @media (max-width: $lg-tablet) {
+    width: 48.5%;
+  }
+
+  @media (max-width: $tablet) {
+    width: 100%;
+  }
+}
+
+.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.abs {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 47.5%;
+
+  @media (max-width: $lg-tablet) {
+    width: 100%;
+    position: static;
+    height: 500px;
+    margin-bottom: -100px;
+  }
+}
+
+img.cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+// NEEDED?
+.container {
+  padding: 0;
+  margin: 30px auto;
+  width: 500px;
+
+  &.no-padding {
+    padding: 0 !important;
+  }
+  &.padding {
+    padding: 30px !important;
+  }
+
+  @media (max-width: $mobile) {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px !important;
+  }
+}
+.page-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-basis: 100%;
+  align-items: baseline;
+  border-bottom: 3px solid $charcoal;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+
+  @media (max-width: $mobile) {
+    flex-direction: column;
+    padding-bottom: 15px;
+  }
+}
+img {
+  max-width: 100%;
+}

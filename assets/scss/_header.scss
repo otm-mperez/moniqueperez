@@ -1,0 +1,75 @@
+/* -------------------------------------------------------------------------- */
+/*  HEADER                                                                    */
+/* -------------------------------------------------------------------------- */
+
+#site-header {
+  background: $blueberry;
+  color: $white;
+  height: 600px;
+  padding: 100px 0 130px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+
+  p {
+    font-weight: $light;
+  }
+
+  img {
+    max-width: 100%;
+
+    @media (min-width: $tablet) {
+      max-width: 575px;
+    }
+  }
+  .profile {
+    position: absolute;
+    left: 50%;
+    top: 520px; //ideally bottom -80px
+    transform: translateX(-50%);
+    width: 160px;
+    height: 160px;
+  }
+
+  .flex-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-content: center;
+    width: 100%;
+    margin-top: 70px;
+  }
+
+  .logo {
+    svg {
+      color: $white;
+    }
+  }
+
+  nav {
+    margin-bottom: 50px;
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 0;
+    }
+    li {
+      padding: 0 10px;
+    }
+    a {
+      @include font-size(1.8);
+      color: $caramel;
+      font-weight: $bold;
+      text-transform: uppercase;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
