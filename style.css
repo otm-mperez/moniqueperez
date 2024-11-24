@@ -1079,3 +1079,18 @@ footer {
       text-decoration: none; }
       footer .lower a:hover {
         text-decoration: underline; }
+
+/* -------------------------------------------------------------------------- */
+/*  SOCIAL                                                                    */
+/* -------------------------------------------------------------------------- */
+.social-links {
+  display: flex; }
+  @media (max-width: 1140px) {
+    .social-links {
+      justify-content: center; } }
+  .social-links li {
+    margin: 30px 10px; }
+  .social-links a:hover svg {
+    border: 1px solid #9F8552;
+    background: #FFFFFF;
+    border-radius: 50%; }

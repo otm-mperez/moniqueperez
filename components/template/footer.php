@@ -5,12 +5,7 @@
           <div class="col">
             <img class="footer-logo" src="./assets/img/logo.svg" alt="Monique Perez Logo">
             <p>Thanks for your interest. Don’t hesitate to connect if I can support your goals.</p>
-            <ul>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <!-- <li><a href="#"></a></li> -->
-            </ul>
+            <?php include "components/template/social.php"?>
           </div>
           <div class="col">
             <h2 class="eyebrow">Selected Clients</h2>
