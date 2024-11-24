@@ -48,7 +48,7 @@
           <span class="medium">Industry:</span> Healthcare, Technology<br>
           <span class="medium">Role:</span> UX/UI Designer, Consultant
         </p>
-        <!-- <a class="button" href="/project-dime-playbook">View Case Study</a> -->
+        <!-- <a class="button primary" href="/project-dime-playbook">View Case Study</a> -->
       </div>
 
       <div class="col">
@@ -71,8 +71,10 @@
           <span class="medium">Industry:</span> Retail, Consumer Goods<br>
           <span class="medium">Role:</span> UX Engineer, UI Designer
         </p>
-        <a class="button" href="//frutitas.com">View Live Site</a>
-        <!-- <a class="button" href="/project-frutitas">View Case Study</a> -->
+        <div class="button-group">
+          <a class="button primary" href="/project-frutitas">View Case Study</a>
+          <a class="button outline" href="//frutitas.com">View Live Site</a>
+        </div>
       </div>
 
       <div class="col">
@@ -95,8 +97,8 @@
           <span class="medium">Industry:</span> Agriculture<br>
           <span class="medium">Role:</span> UX/UI Designer, Web Developer
         </p>
-        <a class="button" href="//fingerlakesgrown.com">View Live Website</a>
-        <!-- <a class="button" href="/project-finger-lakes-grown-website">View Case Study</a> -->
+        <!-- <a class="button primary" href="/project-finger-lakes-grown-website">View Case Study</a> -->
+        <a class="button outline" href="//fingerlakesgrown.com">View Live Website</a>
       </div>
 
       <div class="col">
@@ -119,8 +121,8 @@
           <span class="medium">Industry:</span> Music, Entertainmenty<br>
           <span class="medium">Role:</span> UX/UI Designer, Web Developer
         </p>
-        <a class="button" href="//mannyp.com">View Live Website</a>
-        <!-- <a class="button" href="/project-mannyp-website">View Case Study</a> -->
+        <!-- <a class="button primary" href="/project-mannyp-website">View Case Study</a> -->
+        <a class="button outline" href="//mannyp.com">View Live Website</a>
       </div>
 
       <div class="col">
@@ -167,7 +169,7 @@
 
       <p>Through my experience, I have become specialized in</p>
 
-      <a class="button arrow" href="//calendly.com/moniqueperez/consultation" target="_blank">Book Time on Calendly</a>
+      <a class="button primary arrow" href="//calendly.com/moniqueperez/consultation" target="_blank">Book Time on Calendly</a>
     </div>
   </section>
 

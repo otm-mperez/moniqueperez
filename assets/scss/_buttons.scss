@@ -1,3 +1,66 @@
 /* -------------------------------------------------------------------------- */
 /*  BUTTONS                                                                   */
 /* -------------------------------------------------------------------------- */
+
+button, .button {
+  padding: 20px 30px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-size: inherit;
+  font-weight: $medium;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  transition: all 300ms;
+  letter-spacing: 1px;
+
+  &.primary {
+    background: $button-color;
+    color: $white;
+    &:hover {
+      background: $button-hover;
+      color: $white;
+      text-decoration: none;
+    }
+  }
+  &.outline {
+    background: transparent;
+    border: 1px solid $button-color;
+    color: $button-color;
+    &:hover {
+      background: $milk;
+      border-color: $button-hover;
+      color: $button-hover;
+      text-decoration: none;
+    }
+  }
+  &.arrow {
+    &:after {
+      content: url('assets/img/ico-arrow.svg');
+      margin-left: 10px;
+    }
+  }
+}
+
+.button-group {
+  display: flex;
+  margin-top: 10px;
+
+  &.center {
+    justify-content: center;
+  }
+
+  button, .button {
+    margin-right: 15px;
+  }
+
+  @media (max-width: $lg-tablet) {
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 80%;
+    button, .button {
+      margin: 10px 0;
+    }
+  }
+}
