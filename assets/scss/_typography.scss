@@ -93,12 +93,13 @@ a {
   }
 }
 .emphasis { //P2
-  @include font-size(2.6);
+  @include font-size(2.4);
+  line-height: 1.2;
   font-weight: $semi-bold;
   font-family: $body-text;
   color: $body-color;
   @media (max-width: $mobile) {
-    @include font-size(2.2);
+    @include font-size(2.1);
   }
 }
 small {
@@ -137,16 +138,17 @@ small {
   transform: translateX(-50%);
 }
 
-p {
-  line-height: 1.5;
-}
+// p {
+//   line-height: 1.5;
+// }
 p + p {
   margin-top: 20px;
 }
 p + .subtitle {
   margin-top: -15px;
 }
-p + .button {
+p + .button,
+p + .button-group {
   margin-top: 30px;
 }
 p + .caption {

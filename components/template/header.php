@@ -15,7 +15,7 @@
           <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#work">Work</a></li>
-            <li><a href="/resume.pdf">Resumé</a></li>
+            <li><a href="resume.pdf" target="_blank">Resumé</a></li>
           </ul>
         </nav>
         <div class="intro">

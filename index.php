@@ -10,9 +10,9 @@
   </section>
 
   <!-- Background -->
-  <section id="summary" class="light-blue">
+  <section id="about" class="light-blue">
     <div class="content full center">
-      <h2 class="eyebrow">A little background</h2>
+      <h2 class="eyebrow">A Little Background</h2>
       <h3 class="section-title">Work Experience</h3>
       <p>I’m Head of Digital at On The Map Media, where I lead a small team of designers and developers working with nonprofits and startups to power impactful projects to shape their web presence.</p>
 
@@ -24,7 +24,7 @@
 
       <p>Besides achieving unicorn status, the culmination of my experience has made me a well-rounded web architect. I thoughtfully craft websites and applications with user-centered, intuitive, and visually appealing experiences.</p>
 
-      <p>If you’ve made it this far, thanks for your interest. Feel free to take a pass at some of my case studies below and/or review my recent <a href="/resume.pdf" target="_blank">resumé</a>.</p>
+      <p>If you’ve made it this far, thanks for your interest. Feel free to take a pass at some of my case studies below and/or review my recent <a href="resume.pdf" target="_blank">resumé</a>.</p>
     </div>
   </section>
 
@@ -48,7 +48,7 @@
           <span class="medium">Industry:</span> Healthcare, Technology<br>
           <span class="medium">Role:</span> UX/UI Designer, Consultant
         </p>
-        <!-- <a class="button primary" href="/project-dime-playbook">View Case Study</a> -->
+        <!-- <a class="button primary" href="project-dime-playbook.php">View Case Study</a> -->
       </div>
 
       <div class="col">
@@ -72,7 +72,7 @@
           <span class="medium">Role:</span> UX Engineer, UI Designer
         </p>
         <div class="button-group">
-          <a class="button primary" href="/project-frutitas">View Case Study</a>
+          <!-- <a class="button primary" href="project-frutitas.php">View Case Study</a> -->
           <a class="button outline" href="//frutitas.com">View Live Site</a>
         </div>
       </div>
@@ -97,7 +97,7 @@
           <span class="medium">Industry:</span> Agriculture<br>
           <span class="medium">Role:</span> UX/UI Designer, Web Developer
         </p>
-        <!-- <a class="button primary" href="/project-finger-lakes-grown-website">View Case Study</a> -->
+        <!-- <a class="button primary" href="project-finger-lakes-grown-website.php">View Case Study</a> -->
         <a class="button outline" href="//fingerlakesgrown.com">View Live Website</a>
       </div>
 
@@ -121,7 +121,7 @@
           <span class="medium">Industry:</span> Music, Entertainmenty<br>
           <span class="medium">Role:</span> UX/UI Designer, Web Developer
         </p>
-        <!-- <a class="button primary" href="/project-mannyp-website">View Case Study</a> -->
+        <!-- <a class="button primary" href="project-mannyp-website.php">View Case Study</a> -->
         <a class="button outline" href="//mannyp.com">View Live Website</a>
       </div>
 
@@ -167,7 +167,7 @@
         </article>
       </div>
 
-      <p>Through my experience, I have become specialized in</p>
+      <p>If you’re interested in learning more or if I can support your project/organization, please schedule time to connect with me.</p>
 
       <a class="button primary arrow" href="//calendly.com/moniqueperez/consultation" target="_blank">Book Time on Calendly</a>
     </div>
