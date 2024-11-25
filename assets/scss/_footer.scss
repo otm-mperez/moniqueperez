@@ -57,10 +57,10 @@ footer {
   }
 
   .lower {
-    padding: 50px 40px;
+    @include font-size(1.6);
+    padding: 30px 40px;
     background: lighten($blueberry, 1.5%);
     color: $white;
-    font-size: 18px;
     a {
       color: $white !important;
       text-decoration: none;

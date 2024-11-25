@@ -538,13 +538,13 @@ textarea {
   -moz-osx-font-smoothing: grayscale; }
 
 body {
-  font-size: 20px;
-  font-size: 2rem;
+  font-size: 19px;
+  font-size: 1.9rem;
   font-weight: 400;
   font-family: "Mona Sans", sans-serif;
   color: #54514A;
   line-height: 1.25;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   overflow-x: hidden;
   margin: 0;
   scroll-behavior: smooth; }
@@ -656,6 +656,9 @@ div.network:after {
   transform: translateY(50px); }
   .content.center {
     text-align: center; }
+    .content.center p {
+      max-width: 900px;
+      margin: 0 auto; }
   .content.left {
     text-align: left; }
   .content.full {
@@ -668,7 +671,7 @@ div.network:after {
       width: 50%; }
       .content.split .col:last-child {
         padding-left: 3em; }
-    @media (max-width: 960px) {
+    @media (max-width: 1140px) {
       .content.split {
         flex-wrap: wrap; }
         .content.split .col {
@@ -679,39 +682,17 @@ div.network:after {
             padding-top: 3em; } }
   .content.inverse {
     flex-direction: row-reverse; }
-    .content.inverse .col:first-child {
-      padding-left: 3em; }
-    @media (max-width: 960px) {
-      .content.inverse .col:first-child {
-        padding-left: 0;
+    .content.inverse .col:last-child {
+      padding-right: 3em; }
+    @media (max-width: 1140px) {
+      .content.inverse .col:last-child {
+        padding-right: 0;
         padding-bottom: 3em; } }
   @media (max-width: 960px) {
     .content {
       width: 90%; } }
   .content.contained {
     max-width: 800px; }
-
-.card-group {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 20px 0 40px; }
-
-.card {
-  width: 31.5%;
-  padding: 50px 40px;
-  background: #F6F4F1;
-  border: 1px solid #9F8552;
-  border-radius: 2px;
-  text-align: left;
-  margin-top: 30px; }
-  @media (max-width: 960px) {
-    .card {
-      width: 48.5%; } }
-  @media (max-width: 800px) {
-    .card {
-      width: 100%; } }
 
 .appear {
   opacity: 1;
@@ -730,24 +711,16 @@ div.network:after {
       height: 500px;
       margin-bottom: -100px; } }
 
+.left {
+  text-align: left; }
+
+.right {
+  text-align: right; }
+
 img.cover {
   width: 100%;
   height: 100%;
   object-fit: cover; }
-
-.container {
-  padding: 0;
-  margin: 30px auto;
-  width: 500px; }
-  .container.no-padding {
-    padding: 0 !important; }
-  .container.padding {
-    padding: 30px !important; }
-  @media (max-width: 560px) {
-    .container {
-      width: 100%;
-      margin: 0 auto;
-      padding: 20px !important; } }
 
 .page-header {
   display: flex;
@@ -816,8 +789,8 @@ a {
   letter-spacing: 1px; }
   @media (max-width: 560px) {
     .title {
-      font-size: 40px;
-      font-size: 4rem; } }
+      font-size: 47px;
+      font-size: 4.7rem; } }
 
 .section-title {
   font-size: 50px;
@@ -831,8 +804,8 @@ a {
   margin-bottom: 30px; }
   @media (max-width: 560px) {
     .section-title {
-      font-size: 34px;
-      font-size: 3.4rem; } }
+      font-size: 42px;
+      font-size: 4.2rem; } }
 
 .card-title {
   font-size: 26px;
@@ -858,6 +831,8 @@ a {
   letter-spacing: 3px;
   text-transform: uppercase;
   margin-bottom: 20px; }
+  .eyebrow.blue {
+    color: #2E3D54; }
   @media (max-width: 560px) {
     .eyebrow {
       font-size: 16px;
@@ -882,13 +857,6 @@ small {
   font-weight: 400;
   color: #54514A; }
 
-.tag {
-  font-size: 14px;
-  font-size: 1.4rem;
-  font-weight: 600;
-  font-family: "Mona Sans", sans-serif;
-  color: #9F8552; }
-
 .disclaimer {
   font-size: 12px;
   font-size: 1.2rem;
@@ -912,8 +880,11 @@ small {
   left: 50%;
   transform: translateX(-50%); }
 
+p {
+  line-height: 1.5; }
+
 p + p {
-  margin-top: 20px; }
+  margin-top: 25px !important; }
 
 p + .subtitle {
   margin-top: -15px; }
@@ -937,14 +908,17 @@ p + .caption {
 #site-header {
   background: #2E3D54;
   color: #FFFFFF;
-  height: 600px;
-  padding: 100px 0 130px;
+  height: auto;
+  padding: 40px 0;
   position: relative;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1; }
+  #site-header.home {
+    height: 600px;
+    padding: 100px 0 130px; }
   #site-header p {
     font-weight: 300; }
   #site-header img {
@@ -1033,10 +1007,11 @@ footer {
       list-style: none;
       margin: 0; }
   footer .lower {
-    padding: 50px 40px;
+    font-size: 16px;
+    font-size: 1.6rem;
+    padding: 30px 40px;
     background: #314159;
-    color: #FFFFFF;
-    font-size: 18px; }
+    color: #FFFFFF; }
     footer .lower a {
       color: #FFFFFF !important;
       text-decoration: none; }
@@ -1084,14 +1059,69 @@ button, .button {
     justify-content: center; }
   .button-group button, .button-group .button {
     margin-right: 15px; }
-  @media (max-width: 960px) {
+  @media (max-width: 1140px) {
     .button-group {
-      flex-direction: column;
       justify-content: center;
       margin: 20px auto;
       max-width: 80%; }
       .button-group button, .button-group .button {
         margin: 10px 0; } }
+
+/* -------------------------------------------------------------------------- */
+/*  LINKS                                                                     */
+/* -------------------------------------------------------------------------- */
+#pagination a:hover {
+  text-decoration: none; }
+
+/* -------------------------------------------------------------------------- */
+/*  TAGS                                                                      */
+/* -------------------------------------------------------------------------- */
+.tag-group {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 30px 0 20px; }
+  @media (max-width: 1140px) {
+    .tag-group {
+      justify-content: center; } }
+
+.tag {
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-family: "Mona Sans", sans-serif;
+  text-transform: uppercase;
+  color: #9F8552;
+  padding: 10px 20px;
+  border: 1px solid #9F8552;
+  border-radius: 50px;
+  margin: 0 10px 15px 0; }
+
+/* -------------------------------------------------------------------------- */
+/*  CARDS                                                                     */
+/* -------------------------------------------------------------------------- */
+.card-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 40px; }
+
+.card {
+  width: 31.5%;
+  padding: 50px 40px;
+  background: #F6F4F1;
+  border: 1px solid #9F8552;
+  border-radius: 2px;
+  text-align: left;
+  margin-top: 30px; }
+  @media (max-width: 960px) {
+    .card {
+      width: 48.5%; } }
+  @media (max-width: 800px) {
+    .card {
+      width: 100%; } }
 
 /* -------------------------------------------------------------------------- */
 /*  SOCIAL                                                                    */

@@ -51,7 +51,7 @@ a {
   text-transform: uppercase;
   letter-spacing: 1px;
   @media (max-width: $mobile) {
-    @include font-size(4);
+    @include font-size(4.7);
   }
 }
 .section-title { //H2
@@ -64,7 +64,7 @@ a {
   letter-spacing: 1px;
   margin-bottom: 30px;
   @media (max-width: $mobile) {
-    @include font-size(3.4);
+    @include font-size(4.2);
   }
 }
 .card-title { //H3
@@ -88,6 +88,9 @@ a {
   letter-spacing: 3px;
   text-transform: uppercase;
   margin-bottom: 20px;
+  &.blue {
+    color: $blueberry;
+  }
   @media (max-width: $mobile) {
     @include font-size(1.6);
   }
@@ -107,13 +110,6 @@ small {
   font-family: $body-text;
   font-weight: $regular;
   color: $body-color;
-}
-
-.tag {
-  @include font-size(1.4);
-  font-weight: $semi-bold;
-  font-family: $body-text;
-  color: $caramel;
 }
 .disclaimer {
   @include font-size(1.2);
@@ -137,12 +133,11 @@ small {
   left: 50%;
   transform: translateX(-50%);
 }
-
-// p {
-//   line-height: 1.5;
-// }
+p {
+  line-height: 1.5;
+}
 p + p {
-  margin-top: 20px;
+  margin-top: 25px !important;
 }
 p + .subtitle {
   margin-top: -15px;

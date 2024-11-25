@@ -26,15 +26,13 @@
 // Elements //
 // ------------------------------------------------------ //
 @import '_buttons.scss';
-// @import '_forms.scss';
-// @import '_links.scss';
-// @import '_lists.scss';
-// @import '_tables.scss';
+@import '_links.scss';
+@import '_tags.scss';
 
 
 // Components //
 // ------------------------------------------------------ //
-// @import '_cards.scss';
+@import '_cards.scss';
 @import '_social.scss';
 
 

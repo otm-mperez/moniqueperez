@@ -1,4 +1,4 @@
-<?php include "components/template/header.php"; ?>
+<?php include "components/template/header-home.php"; ?>
 
 <main>
   <!-- Summary -->
@@ -41,14 +41,14 @@
 
       <div class="col">
         <h2 class="eyebrow">Web Redesign</h2>
-        <h3 class="section-title">The Playbooks Design</h3>
+        <h3 class="section-title">The Playbook Design</h3>
         <p class="emphasis">Nonprofit looking to reformat a popular resource for an improved experience.</p>
         <p>
           <span class="medium">Project Type:</span> Web Redesign<br>
           <span class="medium">Industry:</span> Healthcare, Technology<br>
           <span class="medium">Role:</span> UX/UI Designer, Consultant
         </p>
-        <!-- <a class="button primary" href="project-dime-playbook.php">View Case Study</a> -->
+        <a class="button primary" href="project-dime-playbook.php">View Case Study</a>
       </div>
 
       <div class="col">

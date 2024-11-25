@@ -5,14 +5,19 @@
 #site-header {
   background: $blueberry;
   color: $white;
-  height: 600px;
-  padding: 100px 0 130px;
+  height: auto;
+  padding: 40px 0;
   position: relative;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1;
+
+  &.home {
+    height: 600px;
+    padding: 100px 0 130px;
+  }
 
   p {
     font-weight: $light;

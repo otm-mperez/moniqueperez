@@ -54,8 +54,7 @@ button, .button {
     margin-right: 15px;
   }
 
-  @media (max-width: $lg-tablet) {
-    flex-direction: column;
+  @media (max-width: $desktop) {
     justify-content: center;
     margin: 20px auto;
     max-width: 80%;

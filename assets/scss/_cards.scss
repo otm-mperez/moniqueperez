@@ -1,3 +1,30 @@
 /* -------------------------------------------------------------------------- */
-/*  BUTTONS                                                                   */
+/*  CARDS                                                                     */
 /* -------------------------------------------------------------------------- */
+
+.card-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 40px;
+}
+.card {
+  width: 31.5%;
+  // min-height: 425px;
+  padding: 50px 40px;
+  // background: #F8F6EF;
+  background: $milk;
+  border: 1px solid $caramel;
+  border-radius: 2px;
+  text-align: left;
+  margin-top: 30px;
+
+  @media (max-width: $lg-tablet) {
+    width: 48.5%;
+  }
+
+  @media (max-width: $tablet) {
+    width: 100%;
+  }
+}
