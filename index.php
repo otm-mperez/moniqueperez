@@ -1,4 +1,9 @@
-<?php include "components/template/header-home.php"; ?>
+<?php
+$name = 'Home';
+$title = 'Web Designer, Developer, and Director';
+?>
+
+<?php include "components/template/header.php"; ?>
 
 <main>
   <!-- Summary -->
